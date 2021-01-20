@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="This is a boilerplate for a Bootstrap 4.1.1 project">
+    <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
+    <meta name="author" content="Henrik H. Boelsmand">
+    <title>Bootstrap 4 boilerplate</title>
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/app.css">
+
+  </head>
+
+  <body>
+         <div class="container viewport-container">
+           <div class="image-viewport text-center">
+            <div class="product-image-container">
+              <div>
+                <div class="plate-layer">
+                  <span id="engraving-container">Надпись</span>
+                  <img class="plate-container" src="assets/img/plate-gold-polished.png">
+                </div>
+                <img class="leather-layer" src="assets/img/12pm-leather-calfskin-black.png">
+                <img class="product-base" src="assets/img/12pm-base.png">
+              </div>
+            </div>
+           </div>
+         </div>
+
+         <div class="container boilerplate-container">
+           <div class="product-title">
+             <p>Чехол из телячьей кожи</p>
+             <h2>iPhone 12 Pro Max Minimalistic Plate</h2>
+             <h3><span class="title-cost"></span> ₽</h3>
+           </div>
+           <div class="product-configurator">
+            <div class="tab-content text-center">
+              <div class="tab-pane show active" id="tab-leather">
+                <div class="color-choose">
+                  <form>
+                    <input data-image="black" type="radio" class="color-radio" id="black" name="color" dmn-color="black" dmn-name="Черная" dmn-price="0" checked>
+                    <label for="black"><span></span></label>
+
+                    <input data-image="lilac" type="radio" class="color-radio" id="lilac" name="color" dmn-color="lilac" dmn-name="Лиловая" dmn-price="0">
+                    <label for="lilac"><span></span></label>
+
+                    <input data-image="olive" type="radio" class="color-radio" id="olive" name="color" dmn-color="olive" dmn-name="Оливковая" dmn-price="0">
+                    <label for="olive"><span></span></label>
+                     </form>
+                </div>
+                <div class="picker-selected">
+                  <p id="selected-color">Черная</p>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-plate">
+                <div class="plate-choose">
+                  <form>
+                    <input data-image="gold-polished" type="radio" class="plate-radio" id="gold-polished" name="color" dmn-color="gold-polished" dmn-name="Латунь глянцевая" dmn-price="0" checked>
+                    <label for="gold-polished"><span></span></label>
+
+                    <input data-image="gold-matt" type="radio" class="plate-radio" id="gold-matt" name="color" dmn-color="gold-matt" dmn-name="Латунь матовая" dmn-price="0">
+                    <label for="gold-matt"><span></span></label>
+
+                    <input data-image="silver-polished" type="radio" class="plate-radio" id="silver-polished" name="color" dmn-color="silver-polished" dmn-name="Серебро глянцевое, +300 ₽" dmn-price="300">
+                    <label for="silver-polished"><span></span></label>
+
+                    <input data-image="silver-matt" type="radio" class="plate-radio" id="silver-matt" name="color" dmn-color="silver-matt" dmn-name="Серебро матовое, +300 ₽" dmn-price="300">
+                    <label for="silver-matt"><span></span></label>
+                  </form>
+                </div>
+                <div class="picker-selected">
+                  <p id="selected-plate">Латунь глянцевая</p>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-engraving">
+                <div class="input-group engrave-inputs">
+                  <input type="text" class="form-control" name="" id="dev-engrave" maxlength="18" placeholder="Введите надпись">
+                  <select class="selectpicker">
+                      <option>Шрифт 1</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                      <option>Tent</option>
+                      <option>Flashlight</option>
+                      <option>Toilet Paper</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                      <option>Tent</option>
+                      <option>Flashlight</option>
+                      <option>Toilet Paper</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                      <option>Tent</option>
+                      <option>Flashlight</option>
+                      <option>Toilet Paper</option>
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Relish</option>
+                      <option>Tent</option>
+                      <option>Flashlight</option>
+                      <option>Toilet Paper</option>
+                  </select>
+
+                </div>
+              </div>
+            </div> 
+            <ul class="nav nav-tabs configurator-tabs nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#tab-leather">Кожа</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#tab-plate">Табличка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" id="engrave-tab" href="#tab-engraving">Гравировка</a>
+              </li>
+            </ul> 
+           </div>
+           
+           <div class="product-actions">
+             <a href="#" class="btn btn-buy btn-block">Купить за <span class="btn-cost"></span> ₽</a>
+             <p><b>Бесплатная доставка</b> Почтой России 1 класс</p>
+           </div>
+           <hr>
+           <p class="description-paragraph">
+             Особенный аксессуар для вашего смартфона, да, именно вашего! В эпоху безликих и одинаковых вещей, Ваш смартфон засияет по-новому. Представляем вашему вниманию чехол ручной работы для iPhone из натуральной итальянской кожи с табличкой из ювелирного сплава, готовой для любых ваших идей - инициалы, надписи и даже рисунки.
+             <ul class="description-list">
+              <li>Полностью ручная работа</li>
+              <li>Натуральная телячья кожа от итальянских фабрик</li>
+              <li>Шильдик с персональной гравировкой из латуни или серебра</li>
+              <li>Сделано в России</li>
+             </ul>
+           </p>
+         </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="assets/app.js" type="text/javascript"></script> 
+
+  </body>
+
+</html>
