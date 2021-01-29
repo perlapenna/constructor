@@ -65,9 +65,17 @@
 	});
 
 	$(".font-radio").click(function() {
-   		if($(".font-radio").is(":checked")) {
+   		if($(".font-radio").not(":checked")) {
+   			if ( $(this).attr('dmn-load') == 'false' ) {
+   				$('.preloader').show();
+   			}
    			$("#selected-font").text($(this).attr("dmn-name"));
    			$("#engraving-container").css({"font-family" : $(this).attr("dmn-font")});
+   			$(this).attr('dmn-load', 'true');
+   			function hidePreloader() {
+   				$('.preloader').hide();
+   			}
+   			setTimeout(hidePreloader, 500);
    			$font = $(this).attr("dmn-font");
    		}
 	});
