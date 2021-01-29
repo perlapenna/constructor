@@ -1,4 +1,5 @@
  $(window).on('load', function () {
+ 	$('.preloader').hide();
 
 	var $base = "iPhone 12 Pro Max";
 	var $model = "Minimalistic Plate";
@@ -35,8 +36,11 @@
 
 	$(".color-radio").click(function() {
    		if($(".color-radio").is(":checked")) {
+   			$('.preloader').show();
    			$("#selected-color").text($(this).attr("dmn-name"));
-   			$(".leather-layer").attr("src", "assets/img/12pm-leather-calfskin-"+$(this).attr("dmn-color")+".png");
+   			$(".leather-layer").one("load", function() {
+   				$('.preloader').hide();
+   			}).attr("src", "assets/img/12pm-leather-calfskin-"+$(this).attr("dmn-color")+".png");
    			$leather = $(this).attr("dmn-name");
    		}
 	});
