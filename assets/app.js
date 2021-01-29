@@ -1,5 +1,4 @@
  $(window).on('load', function () {
- 	$('.preloader').hide();
 
 	var $base = "iPhone 12 Pro Max";
 	var $model = "Minimalistic Plate";
