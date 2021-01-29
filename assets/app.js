@@ -36,11 +36,14 @@
 
 	$(".color-radio").click(function() {
    		if($(".color-radio").not(":checked")) {
-   			$('.preloader').show();
+   			if ( $(this).attr('dmn-load') == 'false' ) {
+   				$('.preloader').show();
+   			}
    			$("#selected-color").text($(this).attr("dmn-name"));
    			$(".leather-layer").one("load", function() {
    				$('.preloader').hide();
    			}).attr("src", "assets/img/12pm-leather-calfskin-"+$(this).attr("dmn-color")+".png");
+   			$(this).attr('dmn-load', 'true');
    			$leather = $(this).attr("dmn-name");
    		}
 	});
