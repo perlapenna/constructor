@@ -47,8 +47,11 @@
 
 	$(".plate-radio").click(function() {
    		if($(".plate-radio").is(":checked")) {
+   			$('.preloader').show();
    			$("#selected-plate").text($(this).attr("dmn-name"));
-   			$(".plate-container").attr("src", "assets/img/plate-"+$(this).attr("dmn-color")+".png");
+   			$(".plate-container").one("load", function() {
+   				$('.preloader').hide();
+   			}).attr("src", "assets/img/plate-"+$(this).attr("dmn-color")+".png");
    			$(".title-cost, .btn-cost").text(parseInt($basePrice)+parseInt($(this).attr("dmn-price")));
    			$total = $(".title-cost").text();
    			$plate = $(this).attr("dmn-name");
@@ -57,9 +60,11 @@
 
 	$(".font-radio").click(function() {
    		if($(".font-radio").is(":checked")) {
+   			$('.preloader').show();
    			$("#selected-font").text($(this).attr("dmn-name"));
    			$("#engraving-container").css({"font-family" : $(this).attr("dmn-font")});
    			$font = $(this).attr("dmn-font");
+   			$('.preloader').hide();
    		}
 	});
 
