@@ -50,12 +50,15 @@
 
 	$(".plate-radio").click(function() {
    		if($(".plate-radio").not(":checked")) {
-   			$('.preloader').show();
+   			if ( $(this).attr('dmn-load') == 'false' ) {
+   				$('.preloader').show();
+   			}
    			$("#selected-plate").text($(this).attr("dmn-name"));
    			$(".plate-container").one("load", function() {
    				$('.preloader').hide();
    			}).attr("src", "assets/img/plate-"+$(this).attr("dmn-color")+".png");
    			$(".title-cost, .btn-cost").text(parseInt($basePrice)+parseInt($(this).attr("dmn-price")));
+   			$(this).attr('dmn-load', 'true');
    			$total = $(".title-cost").text();
    			$plate = $(this).attr("dmn-name");
    		}
