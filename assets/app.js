@@ -35,7 +35,7 @@
 	});
 
 	$(".color-radio").click(function() {
-   		if($(".color-radio").is(":checked")) {
+   		if($(".color-radio").not(":checked")) {
    			$('.preloader').show();
    			$("#selected-color").text($(this).attr("dmn-name"));
    			$(".leather-layer").one("load", function() {
@@ -46,7 +46,7 @@
 	});
 
 	$(".plate-radio").click(function() {
-   		if($(".plate-radio").is(":checked")) {
+   		if($(".plate-radio").not(":checked")) {
    			$('.preloader').show();
    			$("#selected-plate").text($(this).attr("dmn-name"));
    			$(".plate-container").one("load", function() {
@@ -60,11 +60,9 @@
 
 	$(".font-radio").click(function() {
    		if($(".font-radio").is(":checked")) {
-   			$('.preloader').show();
    			$("#selected-font").text($(this).attr("dmn-name"));
    			$("#engraving-container").css({"font-family" : $(this).attr("dmn-font")});
    			$font = $(this).attr("dmn-font");
-   			$('.preloader').hide();
    		}
 	});
 
