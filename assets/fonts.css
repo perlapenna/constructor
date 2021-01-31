@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'Snell';
+    src: 
+        url('fonts/snell.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'Monty';
+    src: 
+        url('fonts/montserat.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Kholodos';
+    src: 
+        url('fonts/kholodos.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Nexa';
+    src: 
+        url('fonts/nexa.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Click';
+    src: 
+        url('fonts/click.ttf') format('truetype');
+  }
+
+@font-face {
+    font-family: 'Future';
+    src: 
+        url('fonts/future.otf') format('opentype');
+  }
+
+@font-face {
+    font-family: 'Academic';
+    src: 
+        url('fonts/academic.ttf') format('truetype');
+  }
