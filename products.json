@@ -1,34 +1,9 @@
-{
+{https://github.com/perlapenna/constructor/blob/main/products.json
 	"cases": [
 		{
 			"id":"mastrotto",
 			  "name":"Minimalistic Plate",
 			  "price":1990,
-			  "imagePath":"assets/img/",
-			  "leather": [
-			    {"type":"leather-calfskin", "color":"black", "name":"Черная", "price":"0", "domcolor":"#323232", "state":"checked", "load":"true"},
-			    {"type":"leather-calfskin", "color":"blue", "name":"Темно-синяя", "price":"0", "domcolor":"#404561", "state":"", "load":"false"},
-			    {"type":"leather-calfskin", "color":"lilac", "name":"Лиловая", "price":"0", "domcolor":"#bbb5c7", "state":"", "load":"false"},
-			    {"type":"leather-calfskin", "color":"olive", "name":"Оливковая", "price":"0", "domcolor":"#505d4c", "state":"", "load":"false"}
-			  ],
-			  "plate": [
-			  	{"type":"plate", "color":"gold-polished", "name":"Латунь", "price":"0", "domgradient":"#f3cd52,#6b5718,#fffde9", "state":"checked", "load":"true"},
-			  	{"type":"plate", "color":"silver-polished", "name":"Серебро", "price":"300", "domgradient":"#ececec,#676767,#fbfbfb", "state":"", "load":"false"}
-			  ],
-			  "font": [
-			  	{"type":"font", "index":"font-haas", "family":"Neue Haas Unica", "name":"Шрифт Neue Haas Unica", "icon":"font-montserat.svg", "price":"0", "state":"checked", "load":"true"},
-			  	{"type":"font", "index":"font-academic", "family":"Academic", "name":"Шрифт Academic", "icon":"font-academic.svg", "price":"0", "state":"", "load":"false"},
-			  	{"type":"font", "index":"font-snell", "family":"Snell", "name":"Шрифт Snell", "icon":"font-snell.svg", "price":"0", "state":"", "load":"false"},
-			  	{"type":"font", "index":"font-kholodos", "family":"Kholodos", "name":"Шрифт Kholodos", "icon":"font-kholodos.svg", "price":"0", "state":"", "load":"false"},
-			  	{"type":"font", "index":"font-nexa", "family":"Nexa", "name":"Шрифт Nexa", "icon":"font-nexa.svg", "price":"0", "state":"", "load":"false"},
-			  	{"type":"font", "index":"font-click", "family":"Click", "name":"Шрифт Click", "icon":"font-click.svg", "price":"0", "state":"", "load":"false"},
-			  	{"type":"font", "index":"font-future", "family":"Future", "name":"Шрифт Future", "icon":"font-future.svg", "price":"0", "state":"", "load":"false"}
-			]
-		},
-		{
-			"id":"baboba",
-			  "name":"Babobsk Plate,
-			  "price":9999,
 			  "imagePath":"assets/img/",
 			  "leather": [
 			    {"type":"leather-calfskin", "color":"black", "name":"Черная", "price":"0", "domcolor":"#323232", "state":"checked", "load":"true"},
