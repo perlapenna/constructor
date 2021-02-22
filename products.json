@@ -1,6 +1,11 @@
 {
 	"cases": {
 		"mastrotto": {
+			"controls": {
+					"leather":false,
+					"plate":true,
+					"engraving":true
+			},
 			"name":"Minimalistic Plate",
 	  		"price":1990,
 	  		"imagePath":"assets/img/",
