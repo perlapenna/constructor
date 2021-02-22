@@ -49,6 +49,6 @@
 			  	{"type":"font", "index":"font-click", "family":"Click", "name":"Шрифт Click", "icon":"font-click.svg", "price":"0", "state":"", "load":"false"},
 			  	{"type":"font", "index":"font-future", "family":"Future", "name":"Шрифт Future", "icon":"font-future.svg", "price":"0", "state":"", "load":"false"}
 			]
-		},
+		}
 	]
 }
